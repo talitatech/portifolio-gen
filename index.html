@@ -3,16 +3,27 @@
 
 <head>
 
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonte do Google - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="author" content="Talita Oliveira Santos">
   <meta name="description"
     content="Portfólio de Talita Oliveira Santos, Desenvolvedora Full Stack Java com experiência em aplicações web, mobile e backend. Conheça meus projetos e entre em contato.">
   <meta name="robots" content="index, follow">
 
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Link para a Folha de Estilo da Página - CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <title>Talita Santos | Desenvolvedora Full Stack Java</title>
 
@@ -23,7 +34,11 @@
   <!-- Cabeçalho da Página (header) -->
   <header>
     <div class="menu-content">
-      <a href="index.html" class="logo">Portfólio</a>
+
+      <!-- TÍTULO -->
+      <a href="index.html" id="titulo">Portfólio</a>
+
+      <!-- MENU -->
       <nav>
         <ul class="menu-list">
           <li><a href="#hero">Início</a></li>
@@ -32,6 +47,7 @@
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
@@ -42,8 +58,8 @@
     <section id="hero" class="section-container hero-container">
 
       <article class="hero-content">
-        <span>Olá, seja bem-vindo(a)!</span>
-        <h1>Desenvolvedora Full Stack Java</h1>
+        <span>Olá! Que bom ter você aqui.</span>
+        <h1>Desenvolvedora Full Stack</h1>
         <p>Construindo soluções digitais com impacto real de produtos financeiros a tecnologia cívica.</p>
 
         <div class="buttons-container">
@@ -53,8 +69,8 @@
       </article>
 
       <figure class="hero-image">
-        <img src="assets/img/foto-perfil.jpg" alt="Foto de Talita Oliveira Santos, Desenvolvedora Full Stack Java"
-          width="350" height="350" />
+        <img src="./assets/img/talita-santos.jpg"
+          alt="Ilustração de Talita Oliveira Santos, Desenvolvedora Full Stack Java" class="float-animation">
       </figure>
 
     </section>
@@ -63,41 +79,38 @@
     <section id="about" class="section-container about-container">
 
       <figure class="about-image">
-        <img src="assets/img/about.jpg" alt="Talita Santos trabalhando no computador" width="350" height="500" />
+        <img src="./assets/img/talita-santos.jpg" alt="Foto de perfil de Talita Santos">
       </figure>
 
       <article class="about-content">
         <h2>Sobre mim</h2>
 
         <p>Sou Desenvolvedora de Software com mais de 4 anos de experiência em aplicações web, mobile e backend. Fiz uma
-          transição de Ciências Contábeis pelo Mackenzie para a tecnologia e esse olhar de negócio se tornou meu maior
+          transição de Ciências Contábeis pelo Mackenzie para a tecnologia — e esse olhar de negócio se tornou meu maior
           diferencial: entendo o problema antes de escrever qualquer linha de código.</p>
 
         <p>Atuei na Ame Digital em produtos financeiros como Empréstimo FGTS e Consignado, usados por milhões de
           pessoas. Na WURA, contribuo com projetos de impacto social como o Penhas App, presente em mais de 2 mil
-          cidades brasileiras com mais de 17 mil usuárias. Atualmente cursando o Bootcamp Full Stack Java e React na Generation
-          Brasil.</p>
+          cidades brasileiras com mais de 17 mil usuárias. Atualmente cursando Análise e Desenvolvimento de Sistemas na
+          FIAP e Bootcamp Full Stack Java na Generation Brasil.</p>
 
         <div class="about-buttons-data">
 
           <div class="buttons-container">
             <a href="https://github.com/talitatech" target="_blank" rel="noopener noreferrer" class="botao">GitHub</a>
-            <a href="assets/img/curriculo-talita.pdf" target="_blank" rel="noopener noreferrer"
-              class="botao-outline">Currículo</a>
+            <a href="https://www.linkedin.com/in/talitasantosdev/" target="_blank" rel="noopener noreferrer"
+              class="botao-outline">LinkedIn</a>
           </div>
 
           <div class="data-container">
-
             <div class="data-item">
-              <h3>4+</h3>
-              <p>Anos de experiência</p>
+              <span class="data-number">4+</span>
+              <span class="data-label">Anos de experiência</span>
             </div>
-
             <div class="data-item">
-              <h3>10+</h3>
-              <p>Projetos entregues</p>
+              <span class="data-number">10+</span>
+              <span class="data-label">Projetos entregues</span>
             </div>
-
           </div>
 
         </div>
@@ -111,36 +124,33 @@
       <h2>Meus Projetos</h2>
 
       <div class="swiper projects-swiper">
-
         <div class="swiper-wrapper">
 
           <!-- Card 1 — Penhas App -->
           <div class="swiper-slide">
             <article class="project-card">
 
-              <figure class="project-image">
-                <img src="assets/img/penhas.jpg"
+              <div class="project-image">
+                <img src="./assets/img/penhas-app.webp"
                   alt="Penhas App — aplicativo de apoio a mulheres em situação de violência" />
-              </figure>
+              </div>
 
               <div class="project-content">
                 <h3>Penhas App</h3>
-
                 <p>Aplicativo de apoio e proteção para mulheres em situação de violência, desenvolvido para o Instituto
-                  AzMina. Presente em mais de 2 mil cidades brasileiras com mais de 17 mil usuárias. Atuei na
-                  manutenção, correção de bugs e migração do backend para Python.</p>
-
+                  AzMina. Presente em mais de 2 mil cidades com mais de 17 mil usuárias. Atuei na manutenção, correção
+                  de bugs e migração do backend para Python.</p>
                 <div class="project-tags">
                   <span class="tag">Flutter</span>
+                  <span class="tag">Firebase</span>
                   <span class="tag">Python</span>
                   <span class="tag">Django</span>
                   <span class="tag">PostgreSQL</span>
                   <span class="tag">Docker</span>
                 </div>
-
                 <div class="project-buttons">
                   <a href="https://github.com/institutoazmina/penhas-app" target="_blank" rel="noopener noreferrer"
-                    class="botao botao-sm">Código</a>
+                    class="botao botao-sm">App</a>
                   <a href="https://github.com/institutoazmina/penhas-backend" target="_blank" rel="noopener noreferrer"
                     class="botao-outline botao-sm">Backend</a>
                 </div>
@@ -153,25 +163,22 @@
           <div class="swiper-slide">
             <article class="project-card">
 
-              <figure class="project-image">
-                <img src="assets/img/elas-no-congresso.jpg"
+              <div class="project-image">
+                <img src="./assets/img/elas-no-congresso.webp"
                   alt="Elas no Congresso — plataforma de monitoramento legislativo" />
-              </figure>
+              </div>
 
               <div class="project-content">
                 <h3>Elas no Congresso</h3>
-
                 <p>Plataforma de tecnologia cívica voltada ao monitoramento legislativo e à participação feminina na
                   política, com análise de dados públicos via IA. Desenvolvi integrações com APIs públicas e manutenção
                   da plataforma para o Instituto AzMina.</p>
-
                 <div class="project-tags">
                   <span class="tag">TypeScript</span>
                   <span class="tag">Astro</span>
                   <span class="tag">Python</span>
                   <span class="tag">APIs REST</span>
                 </div>
-
                 <div class="project-buttons">
                   <a href="https://www.elasnocongresso.com.br/" target="_blank" rel="noopener noreferrer"
                     class="botao botao-sm">Ver site</a>
@@ -183,32 +190,31 @@
             </article>
           </div>
 
-          <!-- Card 3 — Ame Digital SuperApp -->
+          <!-- Card 3 — Ame Digital -->
           <div class="swiper-slide">
             <article class="project-card">
 
-              <figure class="project-image">
-                <img src="assets/img/ame-digital.jpg" alt="Ame Digital — SuperApp de produtos financeiros" />
-              </figure>
+              <div class="project-image">
+                <img src="./assets/img/ame-digital.jpg" alt="Ame Digital — SuperApp de produtos financeiros" />
+              </div>
 
               <div class="project-content">
                 <h3>Ame Digital — Mini Apps</h3>
-
                 <p>Manutenção e evolução de Mini-Apps e SuperApp Ame Digital, atuando em produtos financeiros como
-                  Empréstimo FGTS, Consignado e Empréstimos Pessoais, utilizados por milhões de pessoas. Integração com
-                  parceiros e times multidisciplinares com metodologias ágeis.</p>
-
+                  Empréstimo FGTS, Consignado e Empréstimos Pessoais, utilizados por milhões de pessoas.</p>
                 <div class="project-tags">
                   <span class="tag">JavaScript</span>
                   <span class="tag">TypeScript</span>
                   <span class="tag">React</span>
-                  <span class="tag">Azure DevOps</span>
+                  <span class="tag">Bitbucket</span>
+                  <span class="tag">Jira</span>
                   <span class="tag">Scrum</span>
                 </div>
-
                 <div class="project-buttons">
                   <a href="https://www.linkedin.com/in/talitasantosdev/" target="_blank" rel="noopener noreferrer"
-                    class="botao botao-sm">Ver no LinkedIn</a>
+                    class="botao botao-sm">LinkedIn</a>
+                  <a href="https://www.instagram.com/useamedigital/" target="_blank" rel="noopener noreferrer"
+                    class="botao-outline botao-sm">Instagram</a>
                 </div>
               </div>
 
@@ -217,10 +223,12 @@
 
         </div>
 
+        <!-- Botões de navegação -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
 
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
       </div>
 
     </section>
@@ -228,49 +236,46 @@
     <!-- Seção Contact -->
     <section id="contact" class="section-container contact-container">
 
+      <!-- REDES SOCIAIS -->
       <article class="contact-info">
         <h2>Entre em contato</h2>
         <p>Quer conversar sobre um projeto, uma oportunidade ou só trocar uma ideia? Me manda uma mensagem!</p>
 
         <div class="social-container">
-
-          <a class="social-icon" href="https://www.linkedin.com/in/talitasantosdev/" target="_blank"
-            rel="noopener noreferrer" aria-label="LinkedIn de Talita Santos" title="LinkedIn de Talita Santos">
-            <img src="assets/icons/social/linkedin.svg" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/talitasantosdev/" target="_blank" rel="noopener noreferrer"
+            class="social-icon" aria-label="LinkedIn de Talita Santos">
+            <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
           </a>
-
-          <a class="social-icon" href="https://github.com/talitatech" target="_blank" rel="noopener noreferrer"
-            aria-label="GitHub de Talita Santos" title="GitHub de Talita Santos">
-            <img src="assets/icons/social/github.svg" alt="GitHub" />
+          <a href="https://github.com/talitatech" target="_blank" rel="noopener noreferrer" class="social-icon"
+            aria-label="GitHub de Talita Santos">
+            <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
           </a>
-
-          <a class="social-icon" href="mailto:talita.santos.tech@gmail.com" aria-label="E-mail de Talita Santos"
-            title="E-mail de Talita Santos">
-            <img src="assets/icons/social/email.svg" alt="E-mail" />
+          <a href="mailto:talita.santos.tech@gmail.com" class="social-icon" aria-label="E-mail de Talita Santos">
+            <img src="./assets/icons/social/email.svg" alt="Link para o E-mail">
           </a>
-
         </div>
       </article>
 
+      <!-- FORMULÁRIO -->
       <form id="formulario">
 
-        <label for="nome">Seu nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required />
-        <span class="error-message">Por favor, informe seu nome.</span>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+        <span id="erro-nome"></span>
 
-        <label for="email">Seu e-mail</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
-        <span class="error-message">Por favor, informe um e-mail válido.</span>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+        <span id="erro-email"></span>
 
         <label for="assunto">Assunto</label>
-        <input type="text" name="assunto" id="assunto" placeholder="Qual é o assunto?" required />
-        <span class="error-message">Por favor, informe o assunto.</span>
+        <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+        <span id="erro-assunto"></span>
 
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
-        <span class="error-message">Por favor, escreva sua mensagem.</span>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
+        <span id="erro-mensagem"></span>
 
-        <button class="botao" type="submit">Enviar mensagem</button>
+        <button class="botao" type="submit">Enviar Mensagem</button>
 
       </form>
 
@@ -280,8 +285,30 @@
 
   <!-- Rodapé da Página (footer) -->
   <footer>
-    <p>&copy; 2025 Talita Oliveira Santos</p>
+    Desenvolvido por Talita Oliveira Santos - 2026
   </footer>
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.projects-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  </script>
 
 </body>
 
